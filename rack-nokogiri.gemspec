@@ -20,8 +20,8 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version = '>= 1.9.0'
 
-  gem.add_runtime_dependency 'rack',         '>= 1.0.0'
-  gem.add_runtime_dependency 'nokogiri',     '>= 1.4.0'
+  gem.add_runtime_dependency 'rack',     '>= 1.0.0'
+  gem.add_runtime_dependency 'nokogiri', '>= 1.4.0'
 
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'minitest'

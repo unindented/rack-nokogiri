@@ -3,7 +3,7 @@ require File.expand_path('../spec_helper', __FILE__)
 describe Rack::Nokogiri do
 
   let(:app) do
-    create_app(status, headers, content, options) do |nodes|
+    create_app(status, headers, content, opts) do |nodes|
       nodes.wrap('<div class="greeting"></div>')
     end
   end
@@ -23,7 +23,7 @@ describe Rack::Nokogiri do
     end
 
     let(:content) { 'foobar' }
-    let(:options) { {} }
+    let(:opts) { {} }
 
     it 'leaves the status untouched' do
       last_response.status.must_equal status
@@ -67,7 +67,7 @@ describe Rack::Nokogiri do
     end
 
     describe 'with a CSS selector' do
-      let(:options) { { css: 'p.hi' } }
+      let(:opts) { { css: 'p.hi' } }
 
       it 'leaves the status untouched' do
         last_response.status.must_equal status
@@ -84,7 +84,7 @@ describe Rack::Nokogiri do
     end
 
     describe 'with a XPath selector' do
-      let(:options) { { xpath: "//p[@class='hi']" } }
+      let(:opts) { { xpath: "//p[@class='hi']" } }
 
       it 'leaves the status untouched' do
         last_response.status.must_equal status
