@@ -1,4 +1,4 @@
-# Rack::Nokogiri [![Build Status](https://img.shields.io/travis/unindented/rack-nokogiri.svg)](http://travis-ci.org/unindented/rack-nokogiri) [![Dependency Status](https://img.shields.io/gemnasium/unindented/rack-nokogiri.svg)](https://gemnasium.com/unindented/rack-nokogiri)
+# Rack::Nokogiri [![Version](https://img.shields.io/gem/v/rack-nokogiri.svg)](https://rubygems.org/gems/rack-nokogiri) [![Build Status](https://img.shields.io/travis/unindented/rack-nokogiri.svg)](http://travis-ci.org/unindented/rack-nokogiri) [![Dependency Status](https://img.shields.io/gemnasium/unindented/rack-nokogiri.svg)](https://gemnasium.com/unindented/rack-nokogiri)
 
 Rack Middleware that allows you to manipulate the nodes in your HTML response however you like.
 
